@@ -81,7 +81,7 @@ class MinHeap
       return
     end
     if @store[right_child] == nil
-      if @store[index] > @store[left_child]
+      if @store[index].value > @store[left_child].value
         swap(index, left_child)
       end
       return
